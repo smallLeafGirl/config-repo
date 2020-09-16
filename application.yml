@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: config-service
+
+# 设置远程的配置中心
+#  cloud:
+#   config:
+#      server:
+#        git:
+#          uri: https://github.com/smallLeafGirl/config-repo.git
+#          search-paths:
+
+#设置本地的配置中心
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config
+
+server:
+  port: 9005
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:2001/eureka,http:eureka2:2002/eureka
