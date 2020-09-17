@@ -20,5 +20,5 @@ management:
         include: refresh
  
 item:
-  amount：10
+  amount: 10
   
