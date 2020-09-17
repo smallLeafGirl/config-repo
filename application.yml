@@ -1,0 +1,16 @@
+spring_cloud:
+  user_service:
+    users: "[{\"id\":1,\"userName\":\"用户1\",\"password\":\"密码1\"},{\"id\":2,\"userName\":\"用户2\",\"password\":\"密码2\"},{\"id\":3,\"userName\":\"用户13\",\"password\":\"密码3\"}]"
+
+
+spring:
+  application:
+    name: user-service
+server:
+  port: 7001
+
+eureka:
+  client:
+    service-url:
+      #��������ֻ����defaultZone,������Ʒ������д�����ַ�磺�������Ϻ���
+      defaultZone: http://eureka1:2001/eureka,http://eureka2:2002/eureka
