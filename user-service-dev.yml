@@ -1,6 +1,6 @@
 sp:
   user-service:
-    users: "[{\"id\":1,\"userName\":\"用户1\",\"password\":\"密码1\"},{\"id\":2,\"userName\":\"用户2\",\"password\":\"密码2\"},{\"id\":3,\"userName\":\"用户3\",\"password\":\"密码3\"}]"
+    users: "[{\"id\":1,\"userName\":\"username-1\",\"password\":\"password-1\"},{\"id\":2,\"userName\":\"username-2\",\"password\":\"password-2\"},{\"id\":3,\"userName\":\"username-3\",\"password\":\"password-3\"}]"
 
 
 spring:
